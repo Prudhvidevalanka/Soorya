@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sri Soorya Nurseries</title>
+  <style>
+    body{
+      margin:0px;
+      background-color:#a04e57;
+    }
+    #head{
+      display:grid;
+      grid-template-columns: 1fr 400px;
+      height:60px;
+      background-color:palegoldenrod;
+     
+    }
+    #top{
+          
+          display:flex;
+          justify-content: space-evenly;
+          background-color:palegoldenrod;
+          font-size: 180%;
+         
+        }
+       #one{
+           font-family:dubai light
+       }
+       #one:hover{
+          background-color:lightsalmon;
+          padding-right:10%;
+          padding-left:10%;
+       }
+   
+   .home,.contact,.details{
+    display: inline;
+    text-align: center;
+    padding-top:15px;
+    transition:background-color 1s;
+    margin-left:3px;
+   }
+   .home:hover,.contact:hover,.details:hover{
+     color:red;
+   }
+ 
+   
+    #collection{
+      width:80%;
+      height:70%;
+      margin: auto auto;
+      border-radius:2%;
+      transition:width 1s;
+      transition-delay:1s;
+      
+    }
+    #collection:hover{
+      width:84%;
+      
+    }
+    #image{
+     
+     display:grid;
+     grid-template-columns: 1fr;
+     height:80%;
+    }
+     #ran{
+      position:relative;
+      background-color: palegoldenrod;
+      text-align:center;
+      font-size: 20%%;
+     }
+     
+    #namedisplay{
+      font-size: 400%; 
+      color:palegoldenrod;
+       text-align: center;
+      width: 100%;
+      font-family: dubai light;
+    }
+    
+    #contact-base{
+            background-image:url("plant3.jpg");
+            width:auto;
+        }
+        #base{
+            
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding:4%;
+        }
+        #first,#second,#third{
+            margin:4%;
+        }
+        .effect-img,.effect-img1,.effect-img2{
+            width:35px;
+            height:35px;
+            margin-right:5px;
+        }
+        .effect-img:hover,.effect-img1:hover,.effect-img2:hover{
+        width:33px;
+         height:33px;
+        }
+    #happy{
+      margin:auto auto;
+      height:100%;
+      margin-bottom:none;
+      text-align: center;
+      font-size:500%;
+      font-family:Pristina;
+      padding-top:20%;
+      padding-bottom:20%;
+      background-color: grey;
+      color:white;
+    }
+        
+  
+  </style>
+</head>
+<body>
+      <div id="top">
+        <div id="one"><a href="#" style="text-decoration: none; color:rgba(0, 0, 0, 0.686)">About</a></div>
+        <div id="one"><a href="#happy" style="text-decoration:none; color:rgb(122, 96, 96)">Details</a></div>
+        <div id="one"><a href="#contact-base" style="text-decoration:none; color:rgba(0, 0, 0, 0.686);">Contact</a></div>
+      </div>
+
+      <div id="namedisplay">
+        <span style="font-weight:bold; ">S</span>ri <span style="font-weight:bold;">S</span>oorya <span style="font-weight:bold;">N</span>urseries
+      </div>
+  
+    <div id="image">
+      <img id="collection" style="height:60%; width: 80%;" src="plant3.jpg"  >
+    </div>
+
+   <div id="happy">
+    <p>Happy</p>
+    <p>Vinayaka</p>
+    <p>Chaturthi</p>
+   </div>
+
+    <div id="ran">
+      Sri Soorya Nurseries
+   </div>
+
+
+    <footer id="contact-base" >
+      <div id="base">
+          <div id="first">
+             <h2>What's New</h2>
+             <p>&#x2713; We deliver quality product</p>
+             <p>&#x2713; Quality Assurance</p>
+             <h2>Varities</h2>
+             <p>Indoor Plants</p>
+             <p>Fruit Varities</p>
+          </div>
+          <div id="second">
+             <h2>Contact Details</h2>
+             <p>&#x260F; Phone</p>
+             <p>8331876467</p>
+             <p>Email</p>
+             <p><a href="mailto:devalanka.veeraswamy@gmail.com">sooryanurseries@gmail.com</a></p>
+          </div>
+          <div id="third">
+            <h2>Location &#x2193;</h2>
+            <p>Andhra Pradesh, EastGodavari District, Kadiam</p>
+            <p>533126</p>
+            <div>
+              <h2>Follow Us</h2>
+              <span ><img class="effect-img" src="whatsapp.png"></span>
+              <span><img class="effect-img1"src="instagram.png" ></span>
+              <span><img class="effect-img2" src="twitter.png"></span>
+            </div>
+          </div>
+      </div>
+      <div style="text-align: end; padding-right:12%;color:#0e0e0e7a; padding-bottom: 20px;">
+        &#169;	Sri Soorya Nurseries 2024
+      </div>
+  </footer>
+   
+   
+
+  <script >
+    
+    /*let arr=["plant3.jpg","plant4.jpeg","plant5.jpeg","plant6.jpeg"];
+    let i=0;
+     
+        function rotate()
+        {
+         let  element=document.getElementById("collection");
+          element.src=arr[i];
+          i=(i+1)%arr.length;
+        }
+        setInterval(rotate,4000);*/
+        let arr=["violet","lightgreen","lightblue","red","lightyellow"];
+        let i=0;
+        
+        setInterval(call,1000);
+        
+        function call()
+        {
+          const element=document.getElementById("happy");
+          element.style.color=arr[i];
+          i=(i+1)%arr.length;
+        }
+        
+  </script>
+</body>
+</html>
